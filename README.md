@@ -35,6 +35,7 @@ alert: stopped at creating model objects lesson code is pushed
   * If you are familiar with using browser tools to inspect asynchronous requests, you may choose to replace `render text` with `render plain` (just like you did in the "Finding a Page" section) and inspect the plain text response in the Network tab.
 <!-- *** above is done *** -->
 * At the end of the "An Edit Form" SECTION 4 - NUMBER 3 video of the "Rails Routes and Resources" section, Rails 7 is again hiding the error and resetting the form. Continue to the next video.
+
 * In the "Deleting Pages" SECTION 5 - NUMBER 1 video of the "Rails Routes and Resources" section, when you add the Delete link to the `show` view, paste this in instead:
 
   ```erb
