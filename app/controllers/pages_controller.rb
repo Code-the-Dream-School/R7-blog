@@ -11,4 +11,11 @@ class PagesController < ApplicationController
   def new
     @page = Page.new
   end
+
+  def create
+    page_params = params.require(:page).permit(:title, :body, :slug)
+    @page = Page.new(page_params)
+    @page.save
+    redirect_to @page
+  end
 end

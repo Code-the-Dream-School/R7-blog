@@ -30,10 +30,10 @@ alert: stopped at creating model objects lesson code is pushed
 <!-- ** Instructor note: also need a note for the hiding at end of View for New Pages ** -->
 * At the end of the "Route to Create Pages" SECTION 3 - NUMBER 7 video of the "Rails Routes and Resources" section, do not be alarmed if you're unable to cause the error "The action 'create' could not be found for PagesController"; Rails 7 simply hides this under the hood and resets the form, so ignore this and continue to the next video.
 
-<!-- *** above is done *** -->
-* In the "Controller Action to Create Pages" SECTION 3 - NUMBER 9 video of the "Rails Routes and Resources" section, at the parts where the instructor enters `render text: params.to_json` into the `create` method or modifies the value after `text:`, skip doing this on your machine, and keep following along the video as if what appears in the instructor's browser appeared on yours. Rails 7 handles form submissions differently, so you won't be able to see the plain text responses without browser tools.
 
+* In the "Controller Action to Create Pages" SECTION 3 - NUMBER 9 video of the "Rails Routes and Resources" section, at the parts where the instructor enters `render text: params.to_json` into the `create` method or modifies the value after `text:`, skip doing this on your machine, and keep following along the video as if what appears in the instructor's browser appeared on yours. Rails 7 handles form submissions differently, so you won't be able to see the plain text responses without browser tools.
   * If you are familiar with using browser tools to inspect asynchronous requests, you may choose to replace `render text` with `render plain` (just like you did in the "Finding a Page" section) and inspect the plain text response in the Network tab.
+<!-- *** above is done *** -->
 * At the end of the "An Edit Form" SECTION 4 - NUMBER 3 video of the "Rails Routes and Resources" section, Rails 7 is again hiding the error and resetting the form. Continue to the next video.
 * In the "Deleting Pages" SECTION 5 - NUMBER 1 video of the "Rails Routes and Resources" section, when you add the Delete link to the `show` view, paste this in instead:
 
