@@ -23,12 +23,19 @@ Because the Treehouse videos use an old version of Rails, there are differences 
   ```
 
   Otherwise, it will be more difficult to follow along their videos later. If the command comes back with the error `cp: app/views/posts is not a directory`, then that means the `scaffold` command failed or was not yet run.
-* In the "Finding a Page" video of the "Rails Routes and Resources" section, after the instructor types in `render text` in the `show` method, you must instead type `render plain`. Otherwise, you will get a "Missing template" error.
-* At the end of the "Route to Create Pages" video of the "Rails Routes and Resources" section, do not be alarmed if you're unable to cause the error "The action 'create' could not be found for PagesController"; Rails 7 simply hides this under the hood and resets the form, so ignore this and continue to the next video.
-* In the "Controller Action to Create Pages" video of the "Rails Routes and Resources" section, at the parts where the instructor enters `render text: params.to_json` into the `create` method or modifies the value after `text:`, skip doing this on your machine, and keep following along the video as if what appears in the instructor's browser appeared on yours. Rails 7 handles form submissions differently, so you won't be able to see the plain text responses without browser tools.
+
+alert: stopped at creating model objects lesson code is pushed
+
+* In the "Finding a Page" SECTION 2 - NUMBER 6 video of the "Rails Routes and Resources" section, after the instructor types in `render text` in the `show` method, you must instead type `render plain`. Otherwise, you will get a "Missing template" error.
+<!-- ** Instructor note: also need a note for the hiding at end of View for New Pages ** -->
+* At the end of the "Route to Create Pages" SECTION 3 - NUMBER 7 video of the "Rails Routes and Resources" section, do not be alarmed if you're unable to cause the error "The action 'create' could not be found for PagesController"; Rails 7 simply hides this under the hood and resets the form, so ignore this and continue to the next video.
+
+
+* In the "Controller Action to Create Pages" SECTION 3 - NUMBER 9 video of the "Rails Routes and Resources" section, at the parts where the instructor enters `render text: params.to_json` into the `create` method or modifies the value after `text:`, skip doing this on your machine, and keep following along the video as if what appears in the instructor's browser appeared on yours. Rails 7 handles form submissions differently, so you won't be able to see the plain text responses without browser tools.
   * If you are familiar with using browser tools to inspect asynchronous requests, you may choose to replace `render text` with `render plain` (just like you did in the "Finding a Page" section) and inspect the plain text response in the Network tab.
-* At the end of the "An Edit Form" video of the "Rails Routes and Resources" section, Rails 7 is again hiding the error and resetting the form. Continue to the next video.
-* In the "Deleting Pages" video of the "Rails Routes and Resources" section, when you add the Delete link to the `show` view, paste this in instead:
+* At the end of the "An Edit Form" SECTION 4 - NUMBER 3 video of the "Rails Routes and Resources" section, Rails 7 is again hiding the error and resetting the form. Continue to the next video.
+<!-- *** above is done *** -->
+* In the "Deleting Pages" SECTION 5 - NUMBER 1 video of the "Rails Routes and Resources" section, when you add the Delete link to the `show` view, paste this in instead:
 
   ```erb
   <%= link_to 'Delete', @page, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
