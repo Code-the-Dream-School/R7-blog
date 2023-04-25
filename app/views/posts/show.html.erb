@@ -13,10 +13,7 @@
 <div id="comments">
   <h1>Comments</h1>
   <% @post.comments.each do |comment| %>
-    <div>
-      <strong><%= comment.name %> says: </strong>
-      <%= comment.content %>
-    </div>
+    <%= render @post.comments %>
   <% end %>
 </div>
 
