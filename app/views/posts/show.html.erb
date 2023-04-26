@@ -11,7 +11,9 @@
 </p>
 
 <div id="comments">
-  <h1>Comments</h1>
+  <% if @post.comments.present? %>
+    <h1>Comments</h1>
+  <% end %>
   <%= render @post.comments %>
   <h2>Add a commment</h2>
   <%= render partial: "comments/form", locals: {comment: @post.comments.new} %>
