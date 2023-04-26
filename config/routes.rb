@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :posts
-  resources :pages
+  resources :posts do 
+    resources :comments
+  end
 
+  resources :pages
   # get '/pages', to: 'pages#index'
   # post '/pages', to: 'pages#create'
   # get '/pages/new', to: 'pages#new', as: 'new_page'
@@ -11,6 +13,4 @@ Rails.application.routes.draw do
   # delete '/pages/:id', to: 'pages#destroy'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
