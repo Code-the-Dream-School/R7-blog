@@ -15,7 +15,7 @@
     <h1>Comments</h1>
   <% end %>
   <%= render @post.comments %>
-  <h2>Add a commment</h2>
+  <h2>Add a comment</h2>
   <%= render partial: "comments/form", locals: {comment: @post.comments.new} %>
 </div>
 
